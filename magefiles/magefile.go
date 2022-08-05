@@ -6,6 +6,14 @@ import (
 	"github.com/magefile/mage/sh"
 )
 
+func Snapshot() error {
+	return sh.RunV("go", "run", fmt.Sprintf("github.com/goreleaser/goreleaser@%s", goReleaserVer), "release", "--snapshot", "--rm-dist")
+}
+
+func Release() error {
+	return sh.RunV("go", "run", fmt.Sprintf("github.com/goreleaser/goreleaser@%s", goReleaserVer), "release", "--rm-dist")
+}
+
 func Build() error {
 	return sh.Run("go", "build", "-o", "build/reassign", "./cmd")
 }
