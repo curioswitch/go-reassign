@@ -33,6 +33,6 @@ linters:
     - usestdlibvars
 issues:
   exclude-rules:
-    - path: magefiles/
+    - path: magefile\.go
       linters:
         - deadcode
