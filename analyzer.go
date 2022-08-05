@@ -1,7 +1,7 @@
 package noreassign
 
 import (
-	"github.com/curioswitch/reassign/internal/analyzer"
+	"github.com/curioswitch/go-noreassign/internal/analyzer"
 	"golang.org/x/tools/go/analysis"
 )
 
