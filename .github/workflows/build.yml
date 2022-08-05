@@ -37,3 +37,4 @@ jobs:
           skip-build-cache: true
       - run: go run mage.go test
       - run: go run mage.go snapshot
+        if: ${{ matrix.os }} == 'ubuntu-22.04'
