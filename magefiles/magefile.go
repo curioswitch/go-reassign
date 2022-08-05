@@ -9,7 +9,7 @@ import (
 var gosImports = sh.RunCmd("go", "run", fmt.Sprintf("github.com/rinchsan/gosimports/cmd/gosimports@%s", gosImportsVer))
 
 func Build() error {
-	return sh.Run("go", "build", "-o", "build/reassign", ".")
+	return sh.Run("go", "build", "-o", "build/reassign", "./cmd")
 }
 
 func Test() error {

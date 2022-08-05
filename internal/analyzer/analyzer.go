@@ -10,18 +10,20 @@ import (
 	"golang.org/x/tools/go/analysis"
 )
 
+const FlagPattern = "pattern"
+
 func New() *analysis.Analyzer {
 	a := &analysis.Analyzer{
 		Name: "reassign",
 		Doc:  "Checks that package variables are not reassigned",
 		Run:  run,
 	}
-	a.Flags.String("pattern", `^(Err.*|EOF)$`, "Pattern to match package variables against to prevent reassignment")
+	a.Flags.String(FlagPattern, `^(Err.*|EOF)$`, "Pattern to match package variables against to prevent reassignment")
 	return a
 }
 
 func run(pass *analysis.Pass) (interface{}, error) {
-	checkRE, err := regexp.Compile(pass.Analyzer.Flags.Lookup("pattern").Value.String())
+	checkRE, err := regexp.Compile(pass.Analyzer.Flags.Lookup(FlagPattern).Value.String())
 	if err != nil {
 		return nil, fmt.Errorf("invalid pattern: %w", err)
 	}
