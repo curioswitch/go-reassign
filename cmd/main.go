@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/curioswitch/go-noreassign/internal/analyzer"
+	"github.com/curioswitch/go-reassign/internal/analyzer"
 	"golang.org/x/tools/go/analysis/singlechecker"
 )
 

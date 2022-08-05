@@ -1,4 +1,4 @@
-module github.com/curioswitch/go-noreassign
+module github.com/curioswitch/go-reassign
 
 go 1.18
 

@@ -1,23 +1,23 @@
-# noreassign
+# reassign
 
 A linter that detects when reassigning a top-level variable in another package.
 
 ## Install
 
 ```bash
-go install github.com/curioswitch/go-noreassign
+go install github.com/curioswitch/go-reassign
 ```
 
 ## Usage
 
 ```bash
-noreassign ./...
+reassign ./...
 ```
 
 Change the pattern to match against variables being reassigned. By default, only `EOF` and `Err*` variables are checked.
 
 ```bash
-noreassign -pattern ".*" ./...
+reassign -pattern ".*" ./...
 ```
 
 ## Background
