@@ -11,6 +11,7 @@ import cc "c"
 import (
 	"d"
 	"d/e"
+	"d/e/f"
 )
 
 var st = struct {
@@ -25,6 +26,8 @@ func foo() {
 	d.ErrD = nil // want "reassigning variable"
 
 	e.ErrE = nil // want "reassigning variable"
+
+	f.ErrF = nil // want "reassigning variable"
 
 	io.EOF = nil // want "reassigning variable"
 
