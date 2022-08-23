@@ -49,7 +49,7 @@ func inspect(pass *analysis.Pass, node ast.Node, checkRE *regexp.Regexp, state *
 			if err != nil {
 				return true
 			}
-			if idx := strings.IndexByte(n, '/'); idx != -1 {
+			if idx := strings.LastIndexByte(n, '/'); idx != -1 {
 				n = n[idx+1:]
 			}
 			state.imports[n] = struct{}{}
