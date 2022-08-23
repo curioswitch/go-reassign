@@ -20,6 +20,10 @@ func TestAnalyzer(t *testing.T) {
 			dir:     "custompattern",
 			pattern: `.*`,
 		},
+		{
+			dir:     "defaultclient",
+			pattern: `^(DefaultClient|DefaultTransport)$`,
+		},
 	}
 
 	wd, err := os.Getwd()
