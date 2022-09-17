@@ -40,7 +40,7 @@ func TestAnalyzer(t *testing.T) {
 			if tt.pattern != "" {
 				_ = a.Flags.Set("pattern", tt.pattern)
 			}
-			analysistest.Run(t, td, a, "a")
+			analysistest.Run(t, td, a, "./...")
 		})
 	}
 }
