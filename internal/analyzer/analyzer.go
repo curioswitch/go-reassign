@@ -3,7 +3,6 @@ package analyzer
 import (
 	"fmt"
 	"go/ast"
-	"go/token"
 	"go/types"
 	"regexp"
 
@@ -38,10 +37,9 @@ func run(pass *analysis.Pass) (interface{}, error) {
 			for _, lhs := range node.Lhs {
 				reportImported(pass, lhs, checkRE, "reassigning")
 			}
-		case *ast.UnaryExpr:
-			if node.Op == token.AND {
-				reportImported(pass, node.X, checkRE, "taking address of")
-			}
+		default:
+			// TODO(chokoswitch): Consider handling operations other than assignment on globals, for example
+			// taking their address.
 		}
 	})
 	return nil, nil

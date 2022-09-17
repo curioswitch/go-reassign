@@ -8,6 +8,6 @@ func use() {
 
 func shadow() any {
 	fmt := struct{ EOF int }{}
-	fmt.EOF = 5 // want "foo"
+	fmt.EOF = 5
 	return fmt
 }
