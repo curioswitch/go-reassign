@@ -11,7 +11,7 @@ var DefaultClient = &http.Client{}
 func reassignPattern() {
 	io.EOF = nil
 
-	config.DefaultClient = nil // want "reassigning variable"
+	config.DefaultClient = nil
 	DefaultClient = nil
 
 	http.DefaultClient = nil    // want "reassigning variable"

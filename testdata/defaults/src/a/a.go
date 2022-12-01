@@ -2,16 +2,12 @@ package a
 
 import (
 	"b"
-
-	"errors"
-	"io"
-)
-import cc "c"
-
-import (
+	cc "c"
 	"d"
 	"d/e"
 	"d/e/f"
+	"errors"
+	"io"
 )
 
 var st = struct {
