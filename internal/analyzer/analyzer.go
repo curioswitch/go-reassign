@@ -55,11 +55,11 @@ func reportImported(pass *analysis.Pass, expr ast.Expr, checkRE *regexp.Regexp, 
 
 		var pkgPath string
 		if selectObj, ok := pass.TypesInfo.Uses[selectIdent]; ok {
-			if pkg, ok := selectObj.(*types.PkgName); !ok || pkg.Imported() == pass.Pkg {
+			pkg, ok := selectObj.(*types.PkgName)
+			if !ok || pkg.Imported() == pass.Pkg {
 				return
-			} else {
-				pkgPath = pkg.Imported().Path()
 			}
+			pkgPath = pkg.Imported().Path()
 		}
 
 		matches := false
