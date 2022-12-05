@@ -24,6 +24,10 @@ func TestAnalyzer(t *testing.T) {
 			dir:     "defaultclient",
 			pattern: `^(DefaultClient|DefaultTransport)$`,
 		},
+		{
+			dir:     "packagepattern",
+			pattern: `^(net/http\.DefaultClient|DefaultTransport)$`,
+		},
 	}
 
 	wd, err := os.Getwd()
