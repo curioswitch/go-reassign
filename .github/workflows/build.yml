@@ -17,22 +17,21 @@ jobs:
       fail-fast: false
       matrix:
         os:
-          - macos-11
-          - macos-12
-          - ubuntu-22.04
+          - macos-13
+          - macos-14
+          - ubuntu-24.04
           - windows-2022
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-go@v3
+      - uses: actions/setup-go@v5
         with:
-          go-version: '^1.18.4'
-          cache: true
+          go-version-file: go.mod
       - name: golangci-lint
         uses: golangci/golangci-lint-action@v3
         with:
-          version: v1.48
+          version: v1.62.2
           skip-pkg-cache: true
           skip-build-cache: true
       - run: go run mage.go test
