@@ -42,9 +42,9 @@ be considered to be non-idiomatic compared to normal `errors.New`. If we can cat
 gain much of the safety of constant errors.
 
 This linter will catch reassignment of variables in other packages. By default it intends to apply to as many codebases
-as possible and only checks a restricted set of variable names, `EOF` and `ErrFoo`, to restrict to sentinel errors. 
+as possible and only checks a restricted set of variable names, `EOF` and `ErrFoo`, to restrict to sentinel errors.
 Package variable reassignment is generally confusing, though, and we recommend avoiding it for all variables, not just errors.
-The `pattern` flag can be set to a regular expression to define what variables cannot be reassigned, and `.*` is 
+The `pattern` flag can be set to a regular expression to define what variables cannot be reassigned, and `.*` is
 recommended if it works with your code.
 
 ## Development
