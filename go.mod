@@ -1,6 +1,6 @@
 module github.com/curioswitch/go-reassign
 
-go 1.18
+go 1.21
 
 require (
 	github.com/magefile/mage v1.14.0
