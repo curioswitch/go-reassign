@@ -16,14 +16,14 @@ func main() {
 	goyek.Define(goyek.Task{
 		Name: "snapshot",
 		Action: func(a *goyek.A) {
-			cmd.Exec(a, fmt.Sprintf("go run github.com/goreleaser/goreleaser@%s release --snapshot --rm-dist", verGoReleaser))
+			cmd.Exec(a, fmt.Sprintf("go run github.com/goreleaser/goreleaser/v2@%s release --snapshot --clean", verGoReleaser))
 		},
 	})
 
 	goyek.Define(goyek.Task{
 		Name: "releasea",
 		Action: func(a *goyek.A) {
-			cmd.Exec(a, fmt.Sprintf("go run github.com/goreleaser/goreleaser@%s release --rm-dist", verGoReleaser))
+			cmd.Exec(a, fmt.Sprintf("go run github.com/goreleaser/goreleaser/v2@%s release --clean", verGoReleaser))
 		},
 	})
 
