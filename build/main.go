@@ -3,11 +3,10 @@ package main
 import (
 	"fmt"
 
+	"github.com/curioswitch/go-build"
 	"github.com/goyek/goyek/v2"
 	"github.com/goyek/x/boot"
 	"github.com/goyek/x/cmd"
-
-	"github.com/curioswitch/go-build"
 )
 
 func main() {
