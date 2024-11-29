@@ -49,6 +49,6 @@ recommended if it works with your code.
 
 ## Development
 
-[mage](https://magefile.org/) is used for development. Run `go run mage.go -l` to see available targets.
+[goyek]([https://magefile.org/](https://github.com/goyek/goyek)) is used for development. Run `go run ./build -h` to see available targets.
 
-For example, to run checks before sending a PR, run `go run mage.go check`.
+For example, to run checks before sending a PR, run `go run ./build check`.
