@@ -49,6 +49,6 @@ recommended if it works with your code.
 
 ## Development
 
-[goyek](<[https://magefile.org/](https://github.com/goyek/goyek)>) is used for development. Run `go run ./build -h` to see available targets.
+[goyek](https://github.com/goyek/goyek) is used for development. Run `go run ./build -h` to see available targets.
 
 For example, to run checks before sending a PR, run `go run ./build check`.
