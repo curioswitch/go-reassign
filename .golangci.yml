@@ -1,35 +1,37 @@
 linters:
   enable:
-    - asasalint
-    - bidichk
-    - bodyclose
+    # We opt-in to style linters without the preset since many
+    # are too strict (e.g., no init functions allowed).
     - decorder
-    - durationcheck
-    - err113
-    - errchkjson
-    - errname
-    - errorlint
-    - exhaustive
+    - dupword
+    - gci
     - gocritic
-    - gofmt
-    - goimports
+    - gofumpt
     - goprintffuncname
-    - gosec
-    - importas
-    - misspell
-    - nolintlint
-    - prealloc
-    - predeclared
-    - promlinter
+    - inamedparam
+    - mirror
     - revive
     - stylecheck
-    - tagliatelle
     - tenv
-    - thelper
     - unconvert
     - usestdlibvars
+    - wastedassign
+  presets:
+    - bugs
+    - performance
+
+linters-settings:
+  gci:
+    sections:
+      - standard
+      - default
+      - prefix(github.com/curioswitch/go-build)
+
 issues:
   exclude-rules:
-    - path: magefile\.go
+    - path: _test\.go
       linters:
-        - deadcode
+        - errcheck
+        - errchkjson
+        - gosec
+        - noctx
