@@ -1,3 +1,4 @@
+version: 2
 builds:
   - main: ./cmd
     env:
@@ -18,7 +19,7 @@ release:
 checksum:
   name_template: "checksums.txt"
 snapshot:
-  name_template: "{{ incpatch .Version }}-next"
+  version_template: "{{ incpatch .Version }}-next"
 changelog:
   sort: asc
   filters:

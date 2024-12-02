@@ -1,3 +1,3 @@
 package main
 
-const verGoReleaser = "v1.10.3"
+const verGoReleaser = "v2.4.8"

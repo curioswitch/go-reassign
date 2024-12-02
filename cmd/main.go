@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/curioswitch/go-reassign/internal/analyzer"
 	"golang.org/x/tools/go/analysis/singlechecker"
+
+	"github.com/curioswitch/go-reassign/internal/analyzer"
 )
 
 func main() {
