@@ -2,8 +2,8 @@ github.com/curioswitch/go-build v0.1.0 h1:alOmsN5hdh7RgU/3m+K5MYtphd955LxiO3M1A2
 github.com/curioswitch/go-build v0.1.0/go.mod h1:N585oVwaSkxE9Iwus9TAHJEkoSQ+1/sSNFxFqLzn4iU=
 github.com/fatih/color v1.17.0 h1:GlRw1BRJxkpqUCBKzKOw098ed57fEsKeNjpTe3cSjK4=
 github.com/fatih/color v1.17.0/go.mod h1:YZ7TlrGPkiz6ku9fK3TLD/pl3CpsiFyu8N92HLgmosI=
-github.com/goyek/goyek/v2 v2.2.0 h1:FXdta04rwVN/HE33XKcBtYht6iaDkJ9Z5Bdh1TdXjO0=
-github.com/goyek/goyek/v2 v2.2.0/go.mod h1:mqU0PSD8q3TRCzhJ1mL79/X7FOrXJcpvOtDEBXi92+E=
+github.com/goyek/goyek/v2 v2.3.0 h1:ZQlQZp+JOkbZXuPNw6SbeQxYMRKB0Gm3nbC2K9IY1r4=
+github.com/goyek/goyek/v2 v2.3.0/go.mod h1:VKzmleKfV5LB9f20Xg5umuPC4XfSdDXwPNesfr1RsLU=
 github.com/goyek/x v0.2.0 h1:vLTzDTqbUQnWTM3NOnejGAWwWZA+hJHElv/cd/3ybQc=
 github.com/goyek/x v0.2.0/go.mod h1:I1yv17Zj0g3Zv5iDC+kB9gh3cqJquJSTEgfognEfe94=
 github.com/mattn/go-colorable v0.1.13 h1:fFA4WZxdEF4tXPZVKMLwD8oUnCTTo08duU7wxecdEvA=
