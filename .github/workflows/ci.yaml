@@ -21,11 +21,11 @@ jobs:
           - ubuntu-24.04
           - windows-2022
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           # Match goreleaser's Go version
           go-version: 1.23
