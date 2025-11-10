@@ -9,7 +9,7 @@ on:
 
 jobs:
   sync:
-    uses: curioswitch/go-build/.github/workflows/export-dependabot-go-sync.yaml@b4bb86391b1e39db0dd8cad98e4d8be49c298077
+    uses: curioswitch/go-build/.github/workflows/export-dependabot-go-sync.yaml@f60fc8379d735d0415c0c56339d389f680760d96
     with:
       github_app_id: "1047503"
     secrets:
