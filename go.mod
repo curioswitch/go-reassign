@@ -1,10 +1,10 @@
 module github.com/curioswitch/go-reassign
 
-go 1.23.0
+go 1.24.0
 
-require golang.org/x/tools v0.33.0
+require golang.org/x/tools v0.39.0
 
 require (
-	golang.org/x/mod v0.24.0 // indirect
-	golang.org/x/sync v0.14.0 // indirect
+	golang.org/x/mod v0.30.0 // indirect
+	golang.org/x/sync v0.18.0 // indirect
 )
